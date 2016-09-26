@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="../images/icon/logo.ico" />
+	<meta name="keywords" content="生态农业，环保农园，自家菜园，70公社，农业科技，庆国，庆国集团，北京庆国绿色农业科技集团有限公司" />
+	<meta name="description" content="北京庆国绿色农业科技集团有限公司是集绿色蔬菜种植，生态农业科技，环保农业科技等项目为一体农业科技发展有限公司"/>  
+	<link  href="../css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	<style>
+		.nav-news{ margin-top:30px; margin-bottom:30px;}
+		.nav-news li{ text-align:center;width:250px;background:#F6F5F5; margin-bottom:10px;  }
+		.nav-news a{color:#4D7357; font-size:18px; font-weight:bold;display: block; height:35px; line-height:35px; text-align:left; padding-left:30px;}
+		.nav-news li a:hover{ background:#5CA51F; color:#FFFFFF}
+		/*side-right*/
+		.sidebar-news{ width:250px; height:800px; border-right:dashed 1px #333333; float:left;}
+		.rightbar-news{ width:760px; float:right; }
+		.news-bottom{  width:760px;  padding-top:30px; background:#F6F5F5; float:left; }
+		/*xinwen*/
+		.time-list a{ color:#4D7357;}
+		.page-news table{ padding-top:80px;}
+		.page-news table th{height:30px;line-height:30px;text-align:center;font-weight:bold;border:none 0px;font-size:12px}
+		.page-news table th.news-time{width:80px; color:#4D7357;}
+		.page-news table th.news-title{ color:#4D7357; font-size:20px;}
+		.page-news table td{border-bottom:1px dashed #D7D7D7;padding:8px}
+		.page-news table td.time-list{color:#666;text-align:center}
+		.page-news table td a{color:#4D7357; font-size:13px;}
+		.page_list{text-align:left;padding-top:50px; padding-left:10px; }
+		.page_list a{border:#ddd 1px solid;color:#4D7357;padding:2px 5px;margin-right:2px}
+		.page_list a:hover,.page_list a:active{border:#e1e6ed 1px solid;color:#000;background-color:#D3E1F6}
+		.page_list span.current{border:#ddd 1px solid;padding:2px 5px;font-weight:bold;margin-right:2px;color:#FFF;background-color:#4D7357}
+		.page_list span.disabled{border:#f3f3f3 1px solid;padding:2px 5px;margin-right:2px;color:#CCC}
+		/*news-content*/
+		.article-one img{ width:250px; float:left; margin-right:10px; }
+		.article-one p{ font-size:15px; text-indent:2em; line-height:2em; padding-right:10px;}
+		.article-one h2{ text-align:center; padding-bottom:20px;}
+		
+		.article-two{ float:left; margin-top:30px;}
+		.article-two img{ width:250px; float:left; margin-right:10px; }
+		.article-two p{ font-size:15px; text-indent:2em;line-height:2em; padding-right:10px;}
+		.article-two h3{ text-align:center;}
+		
+		.article-three{ float:left; margin-left:80px; margin-top:30px; }
+		.article-three img{ width:250px; float:right; margin-left:10px; }
+		.article-three p{ font-size:15px; line-height:2em; padding-right:10px;}
+		.article-three h3{ text-align:center; }
+		
+		.article-fore{ float:left; margin-top:30px; }
+		.article-fore img{ float:left;  width:250px; margin-left:80px; }
+		.article-fore p{ font-size:15px; line-height:2em; text-indent:2em; padding-bottom:10px; }
+		.article-fore h3{ text-align:left;  text-indent:8em;}
+		
+		.five-left{ float:left; margin-top:20px;}
+		.five-left p{ font-size:15px; line-height:2em; text-indent:2em; padding-bottom:10px;}
+		.five-left img { width:250px; margin-left:80px;}
+		.five-right{ float:left;margin-top:20px;}
+		.five-right p{ font-size:15px; line-height:2em; text-align:center;padding-bottom:10px;}
+		.five-right img { width:320px; margin-left:30px;}
+
+		.article-seven { clear:left;}
+		.article-seven img{ width:250px; float:left; margin-right:10px; }
+		.article-seven p{ font-size:15px; text-indent:2em; line-height:2em; padding-right:10px;}
+		.article-seven h3{  padding-bottom:15px;}
+
+		.article-six{ clear:left; }
+		.article-six img{ width:250px; float:left; margin-right:10px; }
+		.article-six p{ font-size:15px; text-indent:2em; line-height:2em; padding-right:10px;}
+		.article-six h3{padding-bottom:15px;}
+		
+		.article-eight{ clear:left; padding-top:30px;}
+		.article-eight h3{ color: red; text-align: center;text-decoration:underline; padding-bottom:20px;}
+		.article-eight p{font-size:15px; text-indent:2em; line-height:2em; padding-right:10px; padding-bottom:20px;}
+		.article-nine{ clear:left; padding-top:30px;}
+		.article-nine h3{ color: red; text-align: center; text-decoration:underline;padding-bottom:20px;}
+		.article-nine p{font-size:15px; text-indent:2em; line-height:2em; padding-right:10px; padding-bottom:20px;}
+		.imgs-one img { width:250px; height:164px; float:left; margin-left:100px;}
+		.imgs-two img{ width:250px;float:left; margin-left:10px;}
+		.imgs-three img{ width:220px; height:164px;float:left; margin-top:10px; margin-left:10px; clear:left;}
+		.imgs-fore img{width:220px;float:left; height:163px;margin-top:10px;margin-left:10px;}
+		.imgs-five img{width:220px;float:left; height:163px;margin-top:10px;margin-left:10px;}
+		.imgs-six img{ width:180px; height:350px; float:left; margin-left:10px;}
+		.imgs-seven img{width:180px; height:300px; float:left; margin-left:10px;}
+		.imgs-eight img{width:180px; height:250px;float:left; margin-left:10px;}
+		.imgs-nine img{width:180px; height:200px; float:left; margin-left:10px;}
+		
+
+
+	</style>
+	<title>庆国绿色农业科技集团</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="top">
+			<div class="logo"><a href="/"><img src="../images/icon/logo.jpeg" alt="庆国集团"></a></div>
+			<div class="daohang">
+				<ul>
+					<li ><a  href="../index.html"><p><span>HOME</span><br>首页</p></a></li>
+					<li><a  href="../commpany.html"><p><span>COMOPANY</span><br>公司</p></a></li>
+					<li><a href="../one.html"><p><span>IMPRESSION</span><br>印象</p></a></li>
+					<li><a  href="../commune.html"><p><span>COMMUNE</span><br>70公社</p></a></li>
+					<li class="xz"><a href="../news.html"><p><span>NEWS</span><br>新闻</p></a></li>
+					<li><a  href="../healthe.html"><p><span>HEALTH</span><br>健康</p></a></li>
+					<li><a href="../contactus.html"><p><span>CONTACT US</span><br>联系</p></a></li>
+				</ul>
+			</div>
+		</div><!--top-end-->
+		<div class="banner-box">
+			<div class="bd">
+				<ul>
+					<li class="load">
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner1.jpeg"  alt="庆国绿色农业科技集团有限公司"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner3.jpeg" /></a>
+						</div>
+					</li>
+					<li >
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner2.jpeg" /></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="banner-btn">
+				<div class="hd"><ul></ul></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".prev,.next").hover(function(){
+					$(this).stop(true,false).fadeTo("show",0.9);
+				},function(){
+					$(this).stop(true,false).fadeTo("show",0.4);
+				});
+				
+				$(".banner-box").slide({
+					titCell:".hd ul",
+					mainCell:".bd ul",
+					effect:"fold",
+					interTime:3500,
+					delayTime:500,
+					autoPlay:true,
+					autoPage:true, 
+					trigger:"click" 
+				});
+
+			});
+		</script><!--banner-end-->
+		<div class="clear"></div>
+		<div class="show-box">
+			<ul>
+				<li><a><img src="../images/shou-box (2).jpeg" /></a></li>
+				<li><a ><img src="../images/shou-box (1).jpeg"  /></a></li>
+				<li><a><img src="../images/shou-box (3).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (8).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (7).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (8).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (9).jpeg"  /></a></li>
+			</ul>
+		</div>
+		<!--show-box-end-->
+		<div class="mainbody">
+			<div class="sidebar-news">
+				<div class="nav-news">
+					<ul>
+						<li><a href="../introduction.html">新闻</a></li>
+					</ul>
+					
+					<div class="page-news">
+						<table border="0" align="center">
+							<tr><th class="news-time">日期</th></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="news-two.html" title="一米阳台菜园">一米阳台菜园</a></td></tr>
+							<tr><td class="time-list"><span>2016/5/27</span></td><td><a href="news-one.html" title="有一种回不去的青春 ">有一种回不去的青春 </a></td></tr>
+							<tr><td class="time-list"><span>2016/5/27</span></td><td><a href="news-three.html" title="夫妻俩打造最美农场">夫妻俩打造最美农场</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻一">低碳</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻五">新鲜</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻七">慢生活</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻九">信任</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻十">奉献</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新十闻一">健康</a></td></tr>
+						</table>
+						<div class="page_list"><div class="list_info">共9个/1页 <span class="disabled">&nbsp;&lt;&lt;&nbsp;</span><span class="disabled">&nbsp;&lt;&nbsp;</span><span class="current">1</span><span class="disabled">&nbsp;&gt;&nbsp;</span><span class="disabled">&nbsp;&gt;&gt;&nbsp;</span></div></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="rightbar-news">
+				<div class="qgjt-top">
+					<h2>庆国集团</h2>
+					<p class="first-p"><span>中国梦</span>中国芯<span>智慧生态农业</span><span>饮食健康溯源</span></p>
+					<p class="two-p"><span>提供绿色产品</span><span>引领健康生活<span>服务百姓餐桌</span></p>
+					
+				</div>
+				<div class="news-bottom">
+					<div class="article-one">
+						<h2>1米阳台菜园！够全家吃的菜~谁家都能实现！</h2>
+						<p><img src="../images/new-img/ym-one.jpg" />在这个土地都比金子珍贵的时代，能拥有一方自家的菜园，想想都是一件奢侈的事。
+							但是~
+							美国的梅尔·巴塞洛缪，却走了一条不同寻常的路，亲自动手在自家创造了日后风靡世界的“一米菜园”（Square Foot Gardening）的园艺风潮
+							这位最能折腾的梅尔大爷，肯定对中国农耕文明非常痴迷和神往，自学插秧、育苗、手工种菜……画风堪比美国版的“青山老农”，洋气十足的国际潮范！
+							那么，怎么才能制作属于你的一米菜园呢？</P>
+						</div>
+						<div class="article-two">
+							<h3>1. 一米种植箱</h3>
+							<p><img src="../images/new-img/ym-three.jpg" />种植箱的深度约15厘米，长和宽各为1-1.2米。这样无需脚踩进去，在外面也能浇水，摘菜。和传统的菜园相比，一米菜园产量更大。它的产量是传统菜园的5倍还要多。
+							</P>
+						</div>
+						<div class="article-three">
+							<h3>2. 梅尔混合土</h3>
+							<p><img src="../images/new-img/ym-fore.jpg" />
+								梅尔自制了“梅尔混合土”，让土壤更适合蔬菜生长。梅尔混合土由等量的混合堆肥、泥煤苔、沙石组成，能用上差不多10年的时间。</p>
+							</div>
+							<div class="article-fore">
+								<h3>3. 你想在一米菜园里种什么？</h3>
+								<p>在做好的箱子上放上隔板，每个格子大约30厘米的距离，这样看上去更整洁舒服。每个格子可种上一种蔬菜。</p>
+								<img src="../images/new-img/ym-six.jpg" />
+								<img src="../images/new-img/ym-seven.jpg" />
+							</div>
+							<div class="article-five">
+								<div class="five-left">
+									<p>想在一米菜园里种什么，将是一个非常有趣的过程。</p>
+									<img  src="../images/new-img/ym-five.jpg" />
+								</div>
+								<div class="five-right">
+									<p>梅尔大爷还推荐了26种蔬菜：</p>
+									<img src="../images/new-img/ym-eight.jpg" />
+								</div>
+							</div>
+
+							<div class="article-seven">
+								<h3>4. 接下来就是育苗了</h3>
+								<p><img src="../images/new-img/ym-nine.jpg" />
+									一米菜园的蔬菜无需除草，只要浇水就可以了，非常方便，浇水最好用喷洒的方式、</p>
+								</div>
+								<div class="article-six">
+									<h3>5. 享受收获的喜悦</h3>
+									<p><img src="../images/new-img/ym-ten.jpg" />
+										最开心的事，莫过于自己亲手种植的蔬菜，到了收获的那一刻。但要注意，在摘取的时候，要小心不要伤害到植物的根系。</p>
+									</div>
+									<div class="article-eight">
+										<h3>“一米菜园”，从美国走向世界</h3>
+										<P>
+											“一米菜园”从诞生到今天，已有将近40年的历史。多年前，身为土木工程师的梅尔大爷还是年轻人的时候，周末喜欢玩园艺。他发现传统的单行种植难以管理，且浪费时间和投入。经多次实验，他发明了1米X1米的种植空间，并改良了土壤，成功开发了一套园艺方法——“一米菜园”（Square Foot Gardening）。一米菜园的优势在于：只用原先20%的种植空间，就能获得100%的收获。一开始，《一米菜园园艺秀》连续多年在电视节目上播出，是迄今为止美国收视率最高的园艺节目，梅尔爷爷收到了美国各地成千上万的园丁表示感谢的来信。梅尔还通过一米菜园全球培训中心，将一米菜园介绍给了世界各地的人道主义机构和领袖人物，推广到了发展中国家，让数百万营养不良的贫困百姓从中受益。这个全球推广计划从非洲延伸到了亚洲、南美，被非营利性人类公共利益团体公认为是一个“巨大的成功”。目前，梅尔大爷的一米菜园已被全世界超过100万的园丁所采用。
+											<div class="imgs-six"><img  src="../images/new-img/oo.jpg" /></div>
+											<div class="imgs-seven"><img src="../images/new-img/ot.jpg" /></div>
+											<div class="imgs-eight"><img  src="../images/new-img/of.jpg" /></div>
+											<div class="imgs-nine"><img  src="../images/new-img/ofive.jpg" /></div>
+										</P>
+									</div>
+									<div class="article-nine">
+										<h3>种菜，要从娃娃抓起！</h3>
+										<p>一米菜园并不止于园艺空间的利用、健康蔬菜的种植，更是寓教于乐的理想方式。从2010年起，梅尔·巴塞洛缪在传授一米菜园的同时，开始计划为孩子们编写一本园艺的书。因为孩子们喜欢和土地玩耍，喜欢看他们栽培的植物长大，变成可以食用的蔬菜，他们满怀的热情让一米菜园有了更丰富的生命力。通过一米菜园，爸爸妈妈、老师们可以和孩子一起在亲近自然、利于生长和学习的健康环境中，体验种植的乐趣和生活的美好。一米菜园，不仅大人们能从中获益，孩子们更可以从中学习到：科学、生态学、植物学、数学，甚至艺术、设计、语言、逻辑，还有园艺知识、健康饮食习惯，乃至节约用水、爱护环境、自给自足的精神等等……<br />从种植到收获，对大人和孩子而言，都是一个幸福感爆棚的过程！不管你心不心动，反正为了子孙后代，我已经是被彻底打动了！让你的家人和孩子们一起来体验，做一个开心“农夫”，种一家人的放心蔬菜吧~<div class="imgs-one"><img src="../images/new-img/o-six.jpg" /></div>
+											<div class="imgs-two"><img src="../images/new-img/o-seven.jpg" /></div>
+											<div class="imgs-three"><img src="../images/new-img/o-eight.jpg" /></div>
+											<div class="imgs-fore"><img src="../images/new-img/o-nine.jpg" /></div>
+											<div class="imgs-five"><img src="../images/new-img/o-ten.jpg" /></div>
+										</p>
+									</div>
+								</div><!--qgjt-bottom-->
+							</div><!--rightbar-end-->
+						</div><!--main-end-->
+						<div class="clear"></div>
+						<div id="footer">
+							<div class="container">
+								公司地址:北京市通州区云景东路贵友大厦   总机：000-000000 公司传真：000-0000000<br />
+								《中华人民共和国增值电信业务经营许可证》京ICP备16022338号-1<br />2016   
+								北京庆国绿色农业科技集团有限公司 &copy;2016 版权所有
+							</div>
+						</div>
+					</div><!--wrap-end-->
+				</body>
+				</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="../images/icon/logo.ico" />
+	<meta name="keywords" content="生态农业，环保农园，自家菜园，70公社，农业科技，庆国，庆国集团，北京庆国绿色农业科技集团有限公司" />
+	<meta name="description" content="北京庆国绿色农业科技集团有限公司是集绿色蔬菜种植，生态农业科技，环保农业科技等项目为一体农业科技发展有限公司"/>  
+	<link  href="../css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript"src="../js/jquery.SuperSlide.2.1.1.js"></script>
+	<style>
+		.nav-news{ margin-top:30px; margin-bottom:30px;}
+		.nav-news li{ text-align:center;width:250px;background:#F6F5F5; margin-bottom:10px;  }
+		.nav-news a{color:#4D7357; font-size:18px; font-weight:bold;display: block; height:35px; line-height:35px; text-align:left; padding-left:30px;}
+		.nav-news li a:hover{ background:#5CA51F; color:#FFFFFF}
+		/*side-right*/
+		.sidebar-news{ width:250px; height:800px; border-right:dashed 1px #333333; float:left;}
+		.rightbar-news{ width:760px; float:right; }
+		.news-bottom{  width:760px;  padding-top:30px; background:#F6F5F5; float:left; }
+		/*xinwen*/
+		.time-list a{ color:#4D7357;}
+		.page-news table{ padding-top:80px;}
+		.page-news table th{height:30px;line-height:30px;text-align:center;font-weight:bold;border:none 0px;font-size:12px}
+		.page-news table th.news-time{width:60px; color:#4D7357;}
+		.page-news table th.news-title{ color:#4D7357; font-size:20px;}
+		.page-news table td{border-bottom:1px dashed #D7D7D7;padding:8px}
+		.page-news table td.time-list{color:#666;text-align:center}
+		.page-news table td a{color:#4D7357; font-size:13px;}
+		.page_list{text-align:left;padding-top:50px; padding-left:10px; }
+		.page_list a{border:#ddd 1px solid;color:#4D7357;padding:2px 5px;margin-right:2px}
+		.page_list a:hover,.page_list a:active{border:#e1e6ed 1px solid;color:#000;background-color:#D3E1F6}
+		.page_list span.current{border:#ddd 1px solid;padding:2px 5px;font-weight:bold;margin-right:2px;color:#FFF;background-color:#4D7357}
+		.page_list span.disabled{border:#f3f3f3 1px solid;padding:2px 5px;margin-right:2px;color:#CCC}
+		/*news-content*/
+		.article{ padding-left:20px; padding-right:20px;  clear:left; border-bottom:1px dashed #CCCCCC;}
+		.article img{ float:left; margin-right:15px; height:150px; width:150px; margin-top:15px;}
+		h2{ text-align:center; font-size:20px; font-weight:normal; padding-bottom:15px;}
+		.article strong{ font-size:16px; color:#990000;}
+		.article p{ font-size:14px; line-height:25px; padding-top:10px; text-indent:2em;}
+	</style>
+	<title>庆国绿色农业科技集团</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="top">
+			<div class="logo"><a href="/"><img src="../images/icon/logo.jpeg" alt="庆国集团"></a></div>
+			<div class="daohang">
+				<ul>
+					<li ><a  href="../index.html"><p><span>HOME</span><br>首页</p></a></li>
+					<li><a  href="../commpany.html"><p><span>COMOPANY</span><br>公司</p></a></li>
+					<li><a href="../one.html"><p><span>IMPRESSION</span><br>印象</p></a></li>
+					<li><a  href="../commune.html"><p><span>COMMUNE</span><br>70公社</p></a></li>
+					<li class="xz"><a href="../news.html"><p><span>NEWS</span><br>新闻</p></a></li>
+					<li><a  href="../healthe.html"><p><span>HEALTH</span><br>健康</p></a></li>
+					<li><a href="../contactus.html"><p><span>CONTACT US</span><br>联系</p></a></li>
+				</ul>
+			</div>
+		</div><!--top-end-->
+		<div class="banner-box">
+			<div class="bd">
+				<ul>
+					<li class="load">
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner1.jpeg"  alt="福禧园农业科技发展有限公司"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner3.jpeg" /></a>
+						</div>
+					</li>
+					<li >
+						<div class="m-width">
+							<a href="javascript:void(0);"><img  src="../images/icon/banner2.jpeg" /></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="banner-btn">
+				<div class="hd"><ul></ul></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$(".prev,.next").hover(function(){
+					$(this).stop(true,false).fadeTo("show",0.9);
+				},function(){
+					$(this).stop(true,false).fadeTo("show",0.4);
+				});
+				
+				$(".banner-box").slide({
+					titCell:".hd ul",
+					mainCell:".bd ul",
+					effect:"fold",
+					interTime:3500,
+					delayTime:500,
+					autoPlay:true,
+					autoPage:true, 
+					trigger:"click" 
+				});
+
+			});
+		</script><!--banner-end-->
+		<div class="clear"></div>
+		<div class="show-box">
+			<ul>
+				<li><a><img src="../images/shou-box (2).jpeg" /></a></li>
+				<li><a ><img src="../images/shou-box (1).jpeg"  /></a></li>
+				<li><a><img src="../images/shou-box (3).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (8).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (7).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (8).jpeg"  /></a></li>
+				<li><a ><img src="../images/shou-box (9).jpeg"  /></a></li>
+			</ul>
+		</div>
+		<!--show-box-end-->
+		<div class="mainbody">
+			<div class="sidebar-news">
+				<div class="nav-news">
+					<ul>
+						<li><a href="../introduction.html">新闻</a></li>
+					</ul>
+					
+					<div class="page-news">
+						<table border="0" align="center">
+							<tr><th class="news-time">日期</th></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="news-two.html" title="一米阳台菜园">一米阳台菜园</a></td></tr>
+							<tr><td class="time-list"><span>2016/5/27</span></td><td><a href="news-one.html" title="有一种回不去的青春 ">有一种回不去的青春 </a></td></tr>
+							<tr><td class="time-list"><span>2016/5/27</span></td><td><a href="news-three.html" title="夫妻俩打造最美农场">夫妻俩打造最美农场</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻一">低碳</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻五">新鲜</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻七">慢生活</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻九">信任</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新闻十">奉献</a></td></tr>
+							<tr><td class="time-list"><span>2016/4/20</span></td><td><a href="#" title="新十闻一">健康</a></td></tr>
+						</table>
+						<div class="page_list"><div class="list_info">共9个/1页 <span class="disabled">&nbsp;&lt;&lt;&nbsp;</span><span class="disabled">&nbsp;&lt;&nbsp;</span><span class="current">1</span><span class="disabled">&nbsp;&gt;&nbsp;</span><span class="disabled">&nbsp;&gt;&gt;&nbsp;</span></div></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="rightbar-news">
+				<div class="qgjt-top">
+					<h2>庆国集团</h2>
+					<p class="first-p"><span>中国梦</span>中国芯<span>智慧生态农业</span><span>饮食健康溯源</span></p>
+					<p class="two-p"><span>提供绿色产品</span><span>引领健康生活<span>服务百姓餐桌</span></p>
+					
+				</div>
+				<div class="news-bottom">
+					<div class="article" style="height:370px"><p><img src="../images/three-img/6666.jpg" />在每一个雨露微染的早晨，
+						叫醒你的不再是扰人的喇叭和闹钟，
+						而是窗外清新的空气与嘤嘤鸟鸣...</p><p><img src="../images/three-img/6E0.jpg" />早饭不再是匆忙咽下的冷面包，
+						而是从自家菜园新摘下的鲜蔬与果子，
+						还有刚刚煮好还热气腾腾的小米粥，
+						再沾点自己亲手酿制的果酱.....</p><p>为了这梦寐以求的生活，
+						这对英国夫妇却已经勇敢迈出了第一步！<img src="../images/three-img/6DDD0.jpg" /></p></div>
+						<div class="article" style=" height:180px"><p><img src="../images/three-img/6SSSS0.jpg" style="float:right"/><img src="../images/three-img/DDDDD.jpg" />这对夫妇名叫尼克和贝拉，
+							原本俩人都各自有着高薪稳定的工作，
+							房子车子票子啥都有了，
+							可他们却并不快乐，
+							总是觉得城市虽浮华却吵闹，
+							这生活也总缺少了点什么。
+							所有的事情就都开始改变了！</p>
+						</div>
+						<div class="article" style="height:200px"><p>但当他们无意中遇到了这片农场后，<br />
+							所有的事情就都开始改变了！<img src="../images/three-img/DDD.jpg" />
+						</p></div>
+						<div class="article" style="height:330px" >
+							<p><img src="../images/three-img/JHJH.jpg" />这个农场位于伦敦近郊，
+								原本是一处种植着很多核桃树的农庄，
+								后来被荒芜了杂草丛生，
+								就变成了无人打理的荒野之地。</p>
+								<p><img src="../images/three-img/DDDDF.jpg" />虽然这里看起来渺无人迹，
+									但尼克和贝拉却是一眼就相中了！
+									他们真心喜欢这块地方的僻静，
+									这样就不会被轻易打扰，
+									于是夫妻俩决定要在这里安新家！</p>
+									<p><img src="../images/three-img/DSRE.jpg" />在杂草丛生的农地里安新家？
+										这不是在开玩笑的吧？
+										可让人意想不到的是，
+										这对英国夫妇竟然真就辞去了工作，
+										然后花了整整9年的时间和精力，
+										让农场来了一次神奇大变身！</p></div>
+										<div class="article" style="height:230px"><p>如今再去那农场时，
+											会发现杂草“离奇消失”了，
+											取而代之的是与厨房相连的一片菜园，
+											菜园旁边则是一片开阔的小草原，
+											四季里盛开着不同颜色的野花。</p><img src="../images/three-img/DFGRE.jpg" /><img src="../images/three-img/DFDS.jpg" /><img src="../images/three-img/640.jpg" /></div>
+											<div class="article" style="height:310px"><p>他们甚至还栽树苗种树，
+												如今已经拥有了自己的一片小树林，
+											</p><img src="../images/three-img/DFSFET.jpg"  /><p>树林里养了各种家禽动物，
+											于是他们又有了自己的开放式农场。<img src="../images/three-img/DDFT4.jpg" /></p><p>别看现在农场收拾得像模像样，
+											但其实一开始时，
+											这对生活在都市里的夫妇，
+											也是什么也不懂到处手忙脚乱！<img src="../images/three-img/ERETRT0.jpg" /></p></div>
+											<div class="article" style="height:230px"><p>他们想像祖辈一样依靠大地过日子，
+												可当等到播种时才发现并不懂时令节气
+												……
+
+												该如何去配合大自然的规律务农？ 
+												种植、蓄养牲畜时又该注意些什么？
+												真是一点头绪也没有，
+												常常好心办坏事搞得屋里屋内一团糟。
+											</p><img src="../images/three-img/JHJH.jpg" /><img 	src="../images/three-img/DDD.jpg" /></div>
+											<div class="article" style=" height:250px"><p>没有大板寸的液晶电视，
+												没有出门就是公交、超市的便捷交通，
+												而且每天还要面对着臭烘烘的肥料，
+												换成一般人早就坚持不下去了，
+												城里多方便多好玩，
+												直接搬回去城里不就好了！
+
+												可尼克和贝拉夫妇却偏不，
+												无论多脏多累多难搞，
+												他们最终都咬牙坚持下来了，
+												因为他们说好：
+												要给孩子们一个自然之家。
+											</p><img src="../images/three-img/64654.jpg" /></div>
+											<div class="article" style=" height:328px"><p>是的哟没错，
+												这对幸福的英国夫妇，
+												他们还拥有一对超级可爱的女儿！
+												10岁的弗洛拉和7岁的佩吉。<img src="../images/three-img/EERER0.jpg" /></p><p>平时夫妻俩忙完农活后，
+												会带着两个可爱女儿在农场里露营，
+												在自家绿树的掩映下生火做饭，
+												然后在繁星的温柔光辉里，
+												一家人互相拥抱着入睡。<img src="../images/three-img/DFDSFS.jpg" /></p><p>而当贝拉和尼克没空的时候，
+												小姐妹俩就会自己推着家里的小推车，
+												去林子里摘熟透的水果。<img src="../images/three-img/64DDDD0.jpg" /></p></div>
+												<div class="article"  style="height:200px"><p>“咯咯咯，咯咯咯，咯咯咯！”
+													哎呀母鸡又在下蛋了~~
+													这是小姐俩自己在农场里养的小母鸡，
+													每当听到母鸡“咯咯咯”叫唤时，
+													她们就会飞快跑到亲手搭建的鸡窝，
+													争相去捡那还热乎乎的鸡蛋...
+													<img src="../images/three-img/DDFSDF0.jpg" /></p></div>
+													<div class="article" style="height:200px"><p>只为一次姐俩的煎鸡蛋厨艺大比拼！<img src="../images/three-img/DFDFDF0.jpg" /><img src="../images/three-img/GGGG.jpg" /></p></div>
+													<div class="article"><p></p></div>
+
+												</div><!--qgjt-bottom-->
+											</div><!--rightbar-end-->
+										</div><!--main-end-->
+										<div class="clear"></div>
+										<div id="footer">
+											<div class="container">
+												公司地址:北京市通州区云景东路贵友大厦   总机：000-000000 公司传真：000-0000000<br />
+												《中华人民共和国增值电信业务经营许可证》京ICP备16022338号-1<br />2016   
+												庆国绿色农业科技集团有限公司&copy;2016 版权所有
+											</div>
+										</div>
+									</div><!--wrap-end-->
+								</body>
+								</html>
